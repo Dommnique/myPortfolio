@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/638ccb607f.js" crossorigin="anonymous"></script>
+    <title>Dominic's Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 style="color: white;" class="logo"><strong>D</strong>ominic.</h1>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu();"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu();"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hello! I'm <span>Dominic</span> Omeke</h1>
+                <p>your go-to Software Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <!--About session-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/About me.jpg">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>A front-end developer who is passionate about finding real-life solutions to everyday problems. My technical skills such as HTML, CSS, JavaScript, Bootstrap, React, fused with my soft skills, put me in a good position to fully understand the users needs, put these needs first when designing and creating satisfying solutions. Being an active team player is an added advantage for me, when it comes to cross-team collaboration, while working on a product together.</p>
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')" >Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><strong>Web development</strong><br>Web app development</li>
+                            <li><strong>UI/UX</strong><br>Designing Web/App Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><strong>June 2020 - May 2021</strong><br>Internship at Axxon Energy Ltd</li>
+                            <li><strong>March 2023 - June 2023</strong><br>Internship at EarlyCode Training Institute</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><strong>2019</strong><br>University Of Port-Harcourt</li>
+                            <li><strong>2021</strong><br>Coursera</li>
+                            <li><strong>2022</strong><br>EarlyCode Computer and Training Institute</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web development</h2>
+                    <p>You don't need to look any further if you are hoping to enjoy an unforgetable web service. I incorporate the apppropriate technical tools, to create responsive and scalable web applications and websites that are user-friendly.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Web Design</h2>
+                    <p>A proper web design is the bedrock of a good user experience. That is why i imploy tools like Figma, to create web designs that are not only aesthetically pleasing, but also solution oriented.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>A functioning App that creates the desired solutions for users can be achieved from a well designed app. Over here, i create App designs that stand out for their seamlessness and usability.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list1">
+                    <div class="work">
+                        <img src="/work1.jpg" alt="">
+                        <div class="layer">
+                            <h3>Speech Text Reader App</h3>
+                            <p>This app allows users to read out inputted texts and also allows users with impaired speech to express theirselves</p>
+                            <a href="https://admirable-dusk-e4e8fb.netlify.app"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/work2.jpg" alt="">
+                        <div class="layer">
+                            <h3>Exchange rate App</h3>
+                            <p>This app enables users to get the exchange rate of any currency in few clicks</p>
+                            <a href="https://tiny-cannoli-3a0902.netlify.app"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/work3.jpg" alt="">
+                        <div class="layer">
+                            <h3>Word Game</h3>
+                            <p>This app allows you to put your typing skills to test by giving you a bunch of words to type at an allocated time</p>
+                            <a href="https://timely-cascaron-4b100d.netlify.app"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+            </div>        
+
+            
+            <div class="work-list2 hideMore" id="mySeeMore">
+                <div class="work">
+                    <img src="/shopping Cart.jpg" alt="">
+                    <div class="layer">
+                        <h3>Shopper App</h3>
+                        <p>This app was fully developed using React. It is a simple app that uses React Context and Reducer, to add and remove items from a user's cart</p>
+                        <a href="https://gorgeous-trifle-58085f.netlify.app"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/movie booking.jpg" alt="">
+                    <div class="layer">
+                        <h3>Movie Booking App</h3>
+                        <p>This simple app makes it possible for user a pre-book movies and seats. This project highlights my JavaScript skills and my knowlegde of Local storage.</p>
+                        <a href="https://cheerful-truffle-5dbc57.netlify.app"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/quotes.jpg" alt="">
+                    <div class="layer">
+                        <h3>Quotes Generator</h3>
+                        <p>This app genrates random quotes that gives users the right amount of motivation.</p>
+                        <a href="https://velvety-daifuku-14306e.netlify.app"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button style="background-color: #f86502; outline: none;" id="btn" class="btn" onclick="seeMoreWork()">See more</button>
+        </div>
+    </div>
+
+    <!--Contact me-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> Dommnicomeke@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +2349122829254</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <a href="/CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea rows="6"name="Message" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzbTaNwnJtMPclEhjhJgm5nxIzcKmM3NEscTyUmVzNg-y9rAJn9Iaz4EapNPYEN7xb7/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = 'Message sent successfully!'
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
